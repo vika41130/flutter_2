@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/set_up.dart';
+import 'package:flutter_application_1/wrap.dart';
 
 void main() {
+  setUp();
   runApp(MyApp());
 }
 
@@ -38,10 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       body: Center(
-        child: Text(
-          'First App',
-          style: TextStyle(fontSize: 30,),
-        ),
+        child: Wrapper(),
       ),
     );
   }
